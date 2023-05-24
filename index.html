@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="index.css">
+    <title>Rany Boy Templado | Portfolio</title>
+    <!--icon-->
+    <link rel="shortcut icon" type="image/png" href="./img/LOGO1.png" />
+    <!--font awesome link-->
+    <script src="https://kit.fontawesome.com/d4e2a811bb.js" crossorigin="anonymous"></script>
+    <script src="scroll-navbar.js">
+        </script>
+    <!--scroll reveal js link-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+   
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <img src="img/LOGO.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#certificate">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="container">
+            <div class="header-text">
+                <p>Java Programmer | Front End Web Developer</p>
+                <h1>Hi, I'm <span>RanyBoy</span> <br> from Philippines</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------About-------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/ranneytech.png" alt="my-pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                   <p>"Hi, I'm Ranney Templado a student currently learning web development, Java and
+                    MySQL database management. Although I don't have professional experience 
+                    yet, I'm passionate about acquiring the skills and knowledge needed to build 
+                    web applications. I'm eager to stay updated on the latest trends and technologies 
+                    in the field and excited to take on new challenges to further develop my skills. 
+                    I'm enthusiastic about the opportunity to apply my knowledge to real-world projects
+                     and work collaboratively with cross-functional teams."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web Design</li>
+                            <li><span>Java Programming Language</span><br>Gui Applications</li>
+                            <li><span>Databases</span><br>MySQL <br>Ms Access</li>
+                            <li><span>Ms Applications</span><br>Ms Word <br>Ms Powerpoint <br> Ms Excel</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <!-- Education -->
+                        <ul
+                            <li><span>2021 - Present</span><br>BSIT from Perpetual Help College of Pangasinan</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Expertise-------->
+
+    <div id="expertise">
+        <div class="container">
+            <h1 class="sub-title">My Expertise</h1>
+
+            <div class="expertise-list">
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Web Design</h2>
+                    <p>Basics in Web Designs using HTML CSS Javascript</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Java Gui Applications</h2>
+                    <p>Oriented in Java just like Java Gui</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>MySQL Database</h2>
+                    <p>Oriented in mySQL Database</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--------certificate-------->
+
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="certificate-list">
+                <div class="certificate">
+                    <img src="img/Certificates/freecodecamp.png">
+                    <div class="layer">
+                        <h1>Responsive Web Design</h1>
+                        <p>From FreeCodeCamp 2021</p>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="img/Certificates/javascript.png">
+                    <div class="layer">
+                        <h1>Javascript And Algorithms</h1>
+                        <p>From FreeCodeCamp 2021</p>
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <img src="img/Certificates/hackerrank.png">
+                    <div class="layer">
+                        <h1>Basics in Java </h1>
+                        <p>From Great Learning 2021</p>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="img/Certificates/classcentralJAVA.jpg">
+                    <div class="layer">
+                        <h1>Java</h1>
+                        <p>From Great learning 2022</p>
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <img src="img/Certificates/Course_Certificate  (1).png">
+                    <div class="layer">
+                        <h1>Google Analytics Begginers</h1>
+                        <p>From Google Analytics Academy 2022</p>
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <img src="img/Certificates/Course_Certificate.png">
+                    <div class="layer">
+                        <h1>Google Analytics Advance </h1>
+                        <p>From Google Analytics Academy 2022</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--------accordion-------->
+
+            <button class="accordion"></button>
+            <div class="panel">
+                <div class="panel-list">
+
+                    
+
+                    <div class="certificate">
+                        <img src="img/Certificates/SOLOHTML.jpg">
+                        <div class="layer">
+                            <h1>Html</h1>
+                            <p>From Solo Learn 2021</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate">
+                        <img src="img/Certificates/sololearnCSS.png">
+                        <div class="layer">
+                            <h1>CSS</h1>
+                            <p>From Solo Learn 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate">
+                        <img src="img/Certificates/SololearnWeb.png">
+                        <div class="layer">
+                            <h1>Responsive Web Design</h1>
+                            <p>From Solo Learn 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate">
+                        <img src="img/Certificates/SololearnCDM.png">
+                        <div class="layer">
+                            <h1>Coding For Marketers</h1>
+                            <p>From Solo Learn 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate">
+                        <img src="img/Certificates/WebFundamentals.png">
+                        <div class="layer">
+                            <h1>Web WebFundamentals</h1>
+                            <p>From Solo Learn 2022</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="certificate">
+                        <img src="img/Certificates/sololearnJava.png">
+                        <div class="layer">
+                            <h1>JAVA</h1>
+                            <p>From Solo Learn 2022</p>
+                        </div>
+
+                    </div>
+                    <div class="certificate">
+                        <img src="img/Certificates/sololearnc++.png">
+                        <div class="layer">
+                            <h1>Html</h1>
+                            <p>From Solo Learn 2022</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="accordion.js">
+        </script>
+
+    </div>
+
+    <!--------Projects--------> 
+     
+    <!--------contact-------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+
+                    <p><i class="fa-solid fa-envelope"></i>ranney.templado20@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09635963243</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ranneytech"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://github.com/ranneytech"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="TempladoRanyboy_Resume.pdf" class="btn btn2" target="_blank">Download CV</a>
+                    <!--CV soon insert file directory-->
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>Created by <span>RanyBoy Templado </span> | &copy; 2023 All rights reserved.</p> 
+    </footer>
+
+
+    <script src="sidemenu.js">
+    </script>
+
+    <script src="scroll-reveal.js">
+    </script>
+
+    <script src="tab-link.js">
+    </script>
+
+</body>
+
+</html>
